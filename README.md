@@ -1,4 +1,4 @@
-# UGNews - CodeSnippet
+# UGNews - Final
 
 This gaming website aims to provide the latest gaming or related news in a minimalistic style. 
 
