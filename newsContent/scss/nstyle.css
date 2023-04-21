@@ -1,0 +1,298 @@
+.header {
+  position: fixed;
+  width: 100%;
+  border-bottom: 2px solid crimson;
+  height: 5em !important;
+  z-index: 2;
+  background-color: rgba(25, 29, 38, 0.5647058824);
+}
+
+.navMenu {
+  display: flex;
+  height: 5em;
+  align-items: center;
+}
+.navMenu a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  width: 4.3em;
+  margin: auto;
+}
+
+.login {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  margin-top: 5px;
+}
+.login img {
+  display: none;
+  padding-top: 10px;
+  height: 2.7em;
+  margin-right: 10px;
+}
+.login button {
+  background-color: rgba(4, 170, 109, 0);
+  color: white;
+  padding: 8px;
+  margin-top: 8px;
+  border: 2px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 80px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #191d26;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #e0e0e0;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left 0.5s;
+}
+
+.fullscreenVid {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  background-color: #191d26;
+  position: relative;
+}
+.fullscreenVid #myVideo {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 945px;
+}
+.fullscreenVid .content {
+  width: 30vw;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  color: white;
+}
+.fullscreenVid .content input[type=text] {
+  width: 130px;
+  color: white;
+  box-sizing: border-box;
+  border: 1px solid crimson;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: rgba(25, 29, 38, 0.5647058824);
+  background-image: url("images/searchicon.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+.fullscreenVid .content input[type=text]:focus {
+  width: 100%;
+}
+.fullscreenVid .content p {
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid crimson;
+}
+
+.newsBanner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
+  background-color: #191d26;
+  color: white;
+}
+
+.main-content {
+  background-color: grey;
+  padding: 10px 0;
+}
+
+.headline {
+  display: flex;
+  justify-content: center;
+  color: White;
+  background-color: #191d26;
+  border-bottom: 2px solid crimson;
+}
+
+.linkWrap {
+  display: flex;
+  flex-direction: column;
+  background-color: #191d26;
+}
+.linkWrap h3 {
+  color: white;
+  padding-left: 5em;
+  border-bottom: 2px solid crimson;
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  color: white;
+  background-color: #191d26;
+}
+.linkList li a {
+  display: inline-block;
+  margin: auto 0;
+  width: 100%;
+  height: 50px;
+  text-decoration: none;
+  color: white;
+}
+
+.news {
+  color: white;
+  background-color: #323948;
+  padding-left: 5px;
+}
+
+.placeImage {
+  width: 358px;
+  padding-top: 1em;
+}
+.placeImage img {
+  width: 100%;
+  height: 410px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  padding-top: 5%;
+}
+
+.pageLinks {
+  display: flex;
+  width: 100%;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-evenly;
+}
+.linkContainer .l-row {
+  display: flex;
+  width: 100%;
+  flex-flow: column wrap;
+  row-gap: 2em;
+  -moz-column-gap: 1em;
+       column-gap: 1em;
+  padding-top: 1em;
+  padding-left: 1em;
+}
+.linkContainer a {
+  text-decoration: none;
+  color: white;
+}
+
+.followLinks {
+  display: flex;
+  flex-flow: row wrap;
+  width: 45%;
+  padding-top: 1em;
+}
+.followLinks .iconCol {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 4.5em;
+}
+.followLinks .followBtn {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+.followLinks .followBtn button {
+  background-color: rgba(4, 170, 109, 0);
+  color: white;
+  padding: 8px;
+  margin: 8px 0;
+  border: 2px solid crimson;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 90% !important;
+  margin: 0 auto;
+}
+
+.content-wrapper {
+  width: 80% !important;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: #191d26;
+  width: 100%;
+  height: 40vh;
+}
+
+@media screen and (max-width: 480px) {
+  .login img {
+    display: block;
+  }
+  .fullscreenVid {
+    width: 480px;
+    height: 320px;
+  }
+  .fullscreenVid .content {
+    display: none;
+  }
+  #myVideo {
+    width: 100%;
+  }
+  .footer-content {
+    flex-direction: column;
+    width: 100%;
+  }
+  .linkContainer {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .followLinks {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=nstyle.css.map */

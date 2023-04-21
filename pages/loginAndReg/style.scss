@@ -1,0 +1,106 @@
+$primaryCol: #191d26;
+$secondCol: grey;
+$accent: crimson;
+$overlayColor: #191d2690;
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(back.png);
+
+  .form-container {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  form {
+    border: 3px solid #f1f1f1;
+    width: 100%;
+    color: white;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid $accent;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: $overlayColor;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 2px solid $accent;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+
+  .container {
+    padding: 16px;
+  }
+
+  span.psw {
+    float: right;
+  }
+}
+.msg {
+  display: none;
+  padding: 5px 10px 5px 10px;
+  margin: 0 auto;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+.success {
+  border: 2px solid green;
+}
+
+.errMsg {
+  color: rgb(255, 25, 71);
+}
+
+.succMsg {
+  color: rgb(0, 255, 13);
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 450px) {
+  .main-container {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+    .form-container {
+      width: 80% !important;
+      height: 100vh !important;
+    }
+  }
+}

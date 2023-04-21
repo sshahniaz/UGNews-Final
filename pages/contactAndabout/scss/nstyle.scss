@@ -1,0 +1,389 @@
+
+$primaryCol: #191d26;
+$secondCol: grey;
+$accent: crimson;
+$overlayColor:#191d2690;
+
+
+.header {
+    position: fixed;
+    width: 100%;
+    border-bottom: 2px solid $accent;
+    height: 5em !important;
+    z-index: 2;
+    background-color: $overlayColor;
+}
+
+//For the Nav icon only
+.navMenu {
+    display: flex;
+    height: 5em;
+    align-items: center;
+    a{
+        
+        list-style: none;
+        text-decoration: none;
+
+    }
+    
+}
+
+//Logo
+
+.logo {
+    display: flex;
+    width: 4.3em;
+    margin: auto;
+}
+
+
+
+.login {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    margin-top: 5px;
+    img{
+        display: none;
+        padding-top: 10px;
+        height: 2.7em;
+        margin-right: 10px;
+    }
+    button {
+        background-color: #04aa6d00;
+        color: white;
+        padding: 8px;
+        margin-top: 8px;
+        border: 2px solid white;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 80px;
+      }
+      
+}
+
+// Side Nav 
+
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: $primaryCol; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+
+    a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #e0e0e0;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+}
+
+#main {
+    transition: margin-left .5s;
+}
+
+
+
+.fullscreenVid {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+        padding: 0;
+    background-color: $primaryCol;
+    position: relative;
+    #myVideo {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 945px;
+       
+    }
+
+    .content {
+        width: 30vw;
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        color: white;
+        
+        input[type=text] {
+            width: 130px;
+            color: white;
+            box-sizing: border-box;
+            border: 1px solid $accent;
+            border-radius: 6px;
+            font-size: 16px;
+            background-color: $overlayColor;
+            background-image: url('images/searchicon.png');
+            background-position: 10px 10px; 
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+
+            &:focus {
+                width: 100%;
+              }
+          }
+        
+        p{
+            margin-top: 5px;
+            border-radius: 6px;
+            border: 1px solid $accent ;
+          }
+          
+    }
+}
+
+
+
+.newsBanner {
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    height: 10%;
+    background-color: $primaryCol;
+    color: white;
+}
+
+.main-content {
+    background-color: $secondCol;
+    padding: 10px 0;
+    
+}
+
+.banner-contact {
+    display: flex;
+    justify-content: center;
+    color: White;
+    background-color: $primaryCol;
+    border-bottom: 2px solid $accent;
+}
+
+.contact{
+
+    background-color: $primaryCol;
+    color: white;
+}
+
+.contact-container{
+    border-radius: 5px;
+  background-color: $primaryCol;
+  padding: 20px;
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid $accent;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: $overlayColor;
+    color: white;
+    padding: 12px 20px;
+    border: 2px solid $accent;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $accent;
+    }
+  }
+}
+
+.linkWrap{
+    display: flex;
+    flex-direction: column;
+    background-color: $primaryCol;
+    
+    h3{
+        color: white;
+        padding-left: 5em;
+        border-bottom: 2px solid $accent;
+    }
+}
+
+.linkList {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: white;
+    background-color: $primaryCol;
+    li{
+        
+        a{
+        display: inline-block;
+        margin: auto 0;
+        width: 100%;
+        height: 50px;
+        text-decoration: none;
+        color: white;
+        }
+    }
+
+}
+
+.news {
+    color: white;
+    background-color: #323948;
+    padding-left: 5px;
+}
+
+.placeImage{
+    width:358px;
+    padding-top: 1em;
+    img{
+        width: 100%;
+        height: 410px
+    }
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    padding-top: 5%;
+}
+
+.pageLinks {
+    display: flex;
+    width: 100%;
+}
+
+.linkContainer{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-evenly;
+    .l-row{
+        display:flex;
+        width: 100%;
+        flex-flow: column wrap;
+        row-gap: 2em;
+        column-gap: 1em;
+        padding-top: 1em;
+        padding-left: 1em;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.followLinks {
+    display: flex;
+    flex-flow: row wrap;
+    width: 45%;
+    padding-top: 1em;
+
+    .iconCol{
+        display: flex;
+        flex-flow: column wrap;
+        row-gap: 4.5em;
+    }
+    
+    .followBtn{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        button {
+            background-color: #04aa6d00;
+            color: white;
+            padding: 8px;
+            margin: 8px 0;
+            border: 2px solid $accent;
+            border-radius: 10px;
+            cursor: pointer;
+            
+          }
+          
+    }
+}
+
+
+//Utilities
+
+.wrapper {
+    width: 90% !important;
+    margin: 0 auto;
+}
+
+.content-wrapper {
+    width: 80% !important;
+    margin: 0 auto;
+    
+}
+
+.footer {
+    background-color: $primaryCol;
+    width: 100%;
+    height: 40vh;
+}
+
+//Media Queries
+
+@media screen and(max-width:480px) {
+
+    .login{
+        img{
+            display: block;
+        }
+    }
+    .fullscreenVid{
+        width: 480px;
+        height: 320px;
+
+        .content{
+            display: none;
+        }
+    }
+    #myVideo {
+        width: 100%;
+       
+    }
+
+    .footer-content {
+        flex-direction: column;
+        width: 100%;
+    }
+    .linkContainer{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .followLinks {
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+//Media for sidenav small screens
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+         a {
+            font-size: 18px;
+        }
+  }
+}
