@@ -1,10 +1,10 @@
-# UGNews - Final
+# UGNews - CodeSnippet
 
 This gaming website aims to provide the latest gaming or related news in a minimalistic style. 
 
 This is a fully functional website with an added carousel for better representation.
 
-
+[Website Link](https://inspiring-gelato-61ec83.netlify.app/index.html)
 ## Usage
 
 - Extract or git clone it.
