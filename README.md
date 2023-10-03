@@ -4,7 +4,7 @@ This gaming website aims to provide the latest gaming or related news in a minim
 
 This is a fully functional website with an added carousel for better representation.
 
-[Website Link](https://inspiring-gelato-61ec83.netlify.app/index.html)
+[Website Link](https://ugnews.netlify.app/)
 ## Usage
 
 - Extract or git clone it.
