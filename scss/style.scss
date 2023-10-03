@@ -17,6 +17,7 @@ $overlayColor: #191d2690;
   display: flex;
   height: 5em;
   align-items: center;
+
   a {
     list-style: none;
     text-decoration: none;
@@ -36,12 +37,14 @@ $overlayColor: #191d2690;
   justify-content: right;
   width: 100%;
   margin-top: 5px;
+
   img {
     display: none;
     padding-top: 10px;
     height: 2.7em;
     margin-right: 10px;
   }
+
   button {
     background-color: #04aa6d00;
     color: white;
@@ -83,6 +86,7 @@ $overlayColor: #191d2690;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+    color: #e0e0e0;
   }
 }
 
@@ -100,6 +104,7 @@ $overlayColor: #191d2690;
   padding: 0;
   background-color: $primaryCol;
   position: relative;
+
   #myVideo {
     margin: 0;
     padding: 0;
@@ -160,10 +165,12 @@ $overlayColor: #191d2690;
 .main-content {
   background-color: $secondCol;
   padding: 10px 0;
+
   .container-fluid {
     .row {
       justify-content: space-between;
     }
+
     .col-sm {
       width: 270px;
       height: auto;
@@ -179,6 +186,7 @@ $overlayColor: #191d2690;
   height: auto;
   min-height: 300px;
   position: relative;
+
   img {
     width: 100%;
     min-height: 300px;
@@ -239,6 +247,7 @@ $overlayColor: #191d2690;
   flex-direction: row;
   width: 50%;
   justify-content: space-evenly;
+
   .l-row {
     display: flex;
     width: 100%;
@@ -248,6 +257,7 @@ $overlayColor: #191d2690;
     padding-top: 1em;
     padding-left: 1em;
   }
+
   a {
     text-decoration: none;
     color: white;
@@ -271,6 +281,7 @@ $overlayColor: #191d2690;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
+
     button {
       background-color: #04aa6d00;
       color: white;
@@ -323,6 +334,7 @@ $overlayColor: #191d2690;
       display: block;
     }
   }
+
   .fullscreenVid {
     width: 480px;
     height: 320px;
@@ -331,6 +343,7 @@ $overlayColor: #191d2690;
       display: none;
     }
   }
+
   #myVideo {
     width: 100%;
   }
@@ -339,10 +352,12 @@ $overlayColor: #191d2690;
     flex-direction: column;
     width: 100%;
   }
+
   .linkContainer {
     width: 100%;
     justify-content: space-around;
   }
+
   .followLinks {
     width: 100%;
     justify-content: space-around;
@@ -355,6 +370,7 @@ $overlayColor: #191d2690;
       display: block;
     }
   }
+
   .fullscreenVid {
     width: 370px !important;
     height: 100vh;
@@ -363,6 +379,7 @@ $overlayColor: #191d2690;
       display: none;
     }
   }
+
   #myVideo {
     width: 100%;
   }
@@ -371,10 +388,12 @@ $overlayColor: #191d2690;
     flex-direction: column;
     width: 100%;
   }
+
   .linkContainer {
     width: 100%;
     justify-content: space-around;
   }
+
   .followLinks {
     width: 100%;
     justify-content: space-around;
@@ -386,6 +405,7 @@ $overlayColor: #191d2690;
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
+
     a {
       font-size: 18px;
     }
