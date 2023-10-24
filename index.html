@@ -23,7 +23,8 @@
     <!-- JQuery -->
     <script src="./js/jquery-3.6.4.min.js"></script>
     <!-- For the Carousel/Slider -->
-    <script src="./js/carousel.js"></script>
+    <script src="./js/carousel.js" defer></script>
+    <script src="./js/speechRecog.js" defer></script>
 </head>
 
 <body>
@@ -88,10 +89,37 @@
                         </div>
                         <div class="col">
                             <div class="login">
-                                <img src="images/searchicon.png" alt="">
-                                <button onclick="location.href='/pages/loginAndReg/login.html'">
-                                    Login
-                                </button>
+                                <div class="container">
+                                    <form class="row d-flex justify-content-center align-items-center search-component"
+                                        id="search-from" role="search">
+                                        <div class="col-auto">
+                                            <div class="input-group">
+                                                <div class="form-outline">
+                                                    <label class="form-label">
+                                                        <span></span>
+                                                    </label>
+                                                    <input id="search-input" type="search" id="form1"
+                                                        class="form-control" placeholder="Search..."
+                                                        style="margin-top: 8px; height: 2.75rem;" />
+
+                                                </div>
+                                                <button id="search-button" type="button"
+                                                    class="btn btn-primary btn-outline-blue">
+                                                    <i class="fas fa-microphone"></i>
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                    </form>
+                                    <div class="col-auto">
+                                        <button onclick="location.href='/pages/loginAndReg/login.html'">
+                                            Login
+                                        </button>
+                                    </div>
+
+                                </div>
+
+
                             </div>
                         </div>
                     </div>
